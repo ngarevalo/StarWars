@@ -1,0 +1,62 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-7">
+            <div class="card shadow-lg border-0 rounded-lg mt-5">
+                <div class="card-header">
+                    <h3 class="text-center font-weight-light my-4">{{ title }}</h3>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input class="form-control py-4" name="inputSearch" type="text"
+                                        placeholder="Enter value" [(ngModel)]="valueToSearch" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <a class="btn btn-primary btn-block" href="#" (click)="GetPeople()">Search</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="small mb-1" for="inputName">Name</label>
+                                    <input type="text" class="form-control py-4" name="inputName" [(ngModel)]="PeopleData.name" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="small mb-1" for="inputHeight">Height</label>
+                                    <input class="form-control py-4" name="inputHeight" type="text"
+                                        placeholder="Height" [(ngModel)]="PeopleData.height" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="small mb-1" for="inputMass">Mass</label>
+                                    <input class="form-control py-4" name="inputMass" type="text"
+                                        placeholder="Mass" [(ngModel)]="PeopleData.mass" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="small mb-1" for="inputResidence">Residence</label>
+                                    <input class="form-control py-4" name="inputResidence" type="text"
+                                        placeholder="Residence" [(ngModel)]="PeopleData.homeworld" />
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
